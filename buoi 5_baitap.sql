@@ -70,6 +70,6 @@ from followers
 group by user_id;
 
 ---EX12
-elect class from courses
+select class from courses
 group by class
 having count(student)>=5;
