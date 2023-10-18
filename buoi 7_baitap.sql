@@ -61,4 +61,7 @@ from worker
 where first_name = 'Amitah';
 
 ---EX10
-CỨU EM CÂU NÀY VỚI Ạ, EM NGẬM NÃY GIỜ CHƯA NHẢ ĐƯỢC NỮA :(((
+select country,
+Substring(title from position ('2' in title) for 4) as year
+from winemag_p2
+where country = 'Macedonia';
