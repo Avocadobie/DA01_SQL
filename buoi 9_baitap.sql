@@ -17,6 +17,12 @@ END as triangle
 FROM triangle;
 
 ---EX3
+SELECT 
+ROUND(CAST(SUM(CASE
+  when call_category is null or call_category ='n/a' then 1
+  else 0 
+end) / COUNT(call_category)* 100) as decimal,1) as call_percentage
+FROM callers;
 
 ---EX4
 elect name 
